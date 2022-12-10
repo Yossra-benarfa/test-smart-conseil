@@ -1,0 +1,28 @@
+<div class="card border-0 mb-5 shadow-lg _offer">
+    <span class="_offerRibbon py-1 px-4 _bgPink
+               text-white text-uppercase position-absolute">
+        {{article.keyWords}}
+    </span>
+    <img src="{{article.image}}" alt="" class="card-img-top border-bottom" />
+    <div class="card-body position-relative">
+        <div class="d-flex justify-content-between">
+            <h4 class="card-title text-truncate font-weight-bold">
+                {{article.title}}
+            </h4>
+            <label class="_addtoFav">
+                <input type="checkbox" name="favourite" class="d-none" />
+                <i class="material-icons active d-none _textPink">
+                    {{article.lastMod}}
+                </i>
+            </label>
+        </div>
+
+        <div class="card-subtitle text-muted text-truncate my-2">
+            {{article.introduction}}
+        </div>
+        <div class="card-text d-flex justify-content-between mt-5 mb-3">
+            <span>Keyowrds:#{{article.keyWords}}</span>
+            <span>Theme: #{{article.itTheme}}</span>
+        </div>
+    </div>
+</div>
